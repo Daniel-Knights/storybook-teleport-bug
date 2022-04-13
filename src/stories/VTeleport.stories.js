@@ -1,13 +1,11 @@
 import VTeleport from '../components/VTeleport.vue';
 
 export default {
-  title: 'VTeleport',
   component: VTeleport,
+  decorators: [() => ({ template: '<div id="app"><story /></div>' })],
 };
 
-const Template = () => ({
+export const Template = () => ({
   components: { VTeleport },
   template: `<VTeleport></VTeleport>`,
 });
-
-export const Empty = Template.bind({});
